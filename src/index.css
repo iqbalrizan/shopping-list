@@ -1,13 +1,134 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  font-size: 36px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.app-background {
+  background-image: url("./images/img1.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main-container {
+  background-color: #f5fd00;
+  width: 400px;
+  height: min-content;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.35);
+}
+
+.title {
+  text-align: center;
+}
+
+.add-item-box {
+  background: #0000ce;
+  color: #000000;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.add-item-box svg {
+  margin: 5px;
+}
+
+.add-item-input {
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+  color: #000000;
+  width: 100%;
+  height: 30px;
+}
+
+input::placeholder {
+  color: #000000;
+}
+input:focus {
+  outline: 0;
+}
+
+.item-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px #120053 solid;
+}
+
+.item-name {
+  cursor: pointer;
+}
+
+.item-name svg {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.item-action-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.remove-button {
+  color: white;
+  background-color: red;
+}
+
+.total {
+  float: right;
+  padding: 10px;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  border: 1px solid #00084f;
+  background: white;
+  border-radius: 50px;
+  font-size: 12px;
+  color: #0b005a;
+  min-width: 70px;
+  justify-content: space-between;
+}
+
+button {
+  background: transparent;
+  border: none;
+  margin: 3px;
+  color: #00005f;
+}
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+.completed {
+  text-decoration: line-through;
 }
